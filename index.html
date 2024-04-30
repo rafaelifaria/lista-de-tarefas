@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"> <!-- Define o conjunto de caracteres da página como UTF-8 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+<title>Lista de Tarefas</title> <!-- Define o título da página -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <!-- Importa o CSS do Bootstrap -->
+<link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo CSS personalizado -->
+</head>
+<body>
+
+<div class="container mt-5"> <!-- Define um container Bootstrap com margem no topo -->
+    <h1>Lista de Tarefas</h1> <!-- Título da lista de tarefas -->
+    <div class="input-group mb-3"> <!-- Cria um grupo de entrada Bootstrap -->
+        <input type="text" id="taskInput" class="form-control" placeholder="Adicionar nova tarefa"> <!-- Campo de entrada para adicionar nova tarefa -->
+        <input type="datetime-local" id="dateTimeInput" class="form-control"> <!-- Campo de entrada para data e hora da tarefa -->
+        <div class="input-group-append"> <!-- Adiciona um anexo ao grupo de entrada -->
+            <button class="btn btn-secondary" type="button" onclick="addTask()">Adicionar</button> <!-- Botão para adicionar tarefa -->
+        </div>
+    </div>
+
+    <ul id="taskList" class="list-group">
+        <!-- Lista de tarefas será adicionada aqui -->
+    </ul>
+
+    <div class="mt-3"> <!-- Margem superior de 3 espaços -->
+        <button class="btn btn-success" onclick="sendViaWhatsApp()">Enviar via WhatsApp</button> <!-- Botão para enviar a lista de tarefas via WhatsApp -->
+    </div>
+</div>
+
+<script src="scripts.js"></script> <!-- Importa o arquivo de script JavaScript -->
+</body>
+</html>

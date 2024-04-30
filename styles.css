@@ -1,0 +1,8 @@
+.completed {
+    text-decoration: line-through;
+}
+body {
+    background-image: url('oioi.jpg');
+    background-size: cover;
+    background-position: center;
+}
